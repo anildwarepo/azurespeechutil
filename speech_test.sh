@@ -1,13 +1,33 @@
 #!/bin/bash
 
 # Define the subscription key and API region
-SUBSCRIPTION_KEY="<>"
+SUBSCRIPTION_KEY=""
 API_REGION="westus2"
 API_BASE_URL="https://$API_REGION.api.cognitive.microsoft.com/speechtotext/v3.1"
 
+# Step 0: Create a new transcription
+curl -X POST "$API_BASE_URL/transcriptions" \
+-H "Ocp-Apim-Subscription-Key: $SUBSCRIPTION_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+  "displayName": "Simple transcription",
+  "description": "Simple transcription description",
+  "locale": "en-US",
+  "contentUrls": ["https://github.com/microsoft/batch-processing-kit/blob/master/tests/resources/whatstheweatherlike.wav?raw=true"],
+  "properties": {
+    "diarizationEnabled": true,
+    "diarization": {
+      "speakers": {
+        "minCount": 1,
+        "maxCount": 5
+      }
+    }
+  }
+}'
+
 # Step 1: Get all transcriptions and extract their IDs
 transcription_ids=$(curl -s -X GET "$API_BASE_URL/transcriptions" \
--H "Ocp-Apim-Subscription-Key: $SUBSCRIPTION_KEY" | jq -r '.values[].self | split("/")[-1]')
+-H "Ocp-Apim-Subscription-Key: $SUBSCRIPTION_KEY" | jq -r '.values[].self | .[-36:]')
 
 # Step 2: Loop through each transcription ID
 for transcription_id in $transcription_ids; do
@@ -18,7 +38,7 @@ for transcription_id in $transcription_ids; do
     -H "Ocp-Apim-Subscription-Key: $SUBSCRIPTION_KEY")
 
     # Extract the first file ID (assuming there's only one file for simplicity)
-    file_id=$(echo "$file_response" | jq -r '.values[0].self | split("/")[-1]')
+    file_id=$(echo "$file_response" | jq -r '.values[0].self | .[-36:]')
     
     # Step 4: Get the file details and extract the content URL
     curl -s -X GET "$API_BASE_URL/transcriptions/$transcription_id/files/$file_id" \

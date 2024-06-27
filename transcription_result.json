@@ -1,6 +1,6 @@
 {
   "source": "https://github.com/microsoft/batch-processing-kit/blob/master/tests/resources/whatstheweatherlike.wav?raw=true",
-  "timestamp": "2024-06-27T17:43:52Z",
+  "timestamp": "2024-06-27T18:13:31Z",
   "durationInTicks": 20300000,
   "duration": "PT2.03S",
   "combinedRecognizedPhrases": [

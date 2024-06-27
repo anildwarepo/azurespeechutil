@@ -1,0 +1,35 @@
+{
+  "source": "https://github.com/microsoft/batch-processing-kit/blob/master/tests/resources/whatstheweatherlike.wav?raw=true",
+  "timestamp": "2024-06-27T17:43:52Z",
+  "durationInTicks": 20300000,
+  "duration": "PT2.03S",
+  "combinedRecognizedPhrases": [
+    {
+      "channel": 0,
+      "lexical": "what's the weather like",
+      "itn": "what's the weather like",
+      "maskedITN": "What's the weather like?",
+      "display": "What's the weather like?"
+    }
+  ],
+  "recognizedPhrases": [
+    {
+      "recognitionStatus": "Success",
+      "channel": 0,
+      "speaker": 1,
+      "offset": "PT0.04S",
+      "duration": "PT1.24S",
+      "offsetInTicks": 400000.0,
+      "durationInTicks": 12400000.0,
+      "nBest": [
+        {
+          "confidence": 0.9738654,
+          "lexical": "what's the weather like",
+          "itn": "what's the weather like",
+          "maskedITN": "What's the weather like?",
+          "display": "What's the weather like?"
+        }
+      ]
+    }
+  ]
+}

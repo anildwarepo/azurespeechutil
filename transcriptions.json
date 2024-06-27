@@ -1,0 +1,102 @@
+{
+  "values": [
+    {
+      "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/a814dd99-c440-4427-b7a4-d86ac421cc66",
+      "model": {
+        "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/models/base/a1b73ec2-f75b-4b61-90e6-163ebae736a5"
+      },
+      "links": {
+        "files": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/a814dd99-c440-4427-b7a4-d86ac421cc66/files"
+      },
+      "properties": {
+        "diarizationEnabled": true,
+        "wordLevelTimestampsEnabled": false,
+        "displayFormWordLevelTimestampsEnabled": false,
+        "channels": [
+          0,
+          1
+        ],
+        "punctuationMode": "DictatedAndAutomatic",
+        "profanityFilterMode": "Masked",
+        "duration": "PT2S",
+        "diarization": {
+          "speakers": {
+            "minCount": 1,
+            "maxCount": 5
+          }
+        }
+      },
+      "lastActionDateTime": "2024-06-27T17:41:21Z",
+      "status": "Succeeded",
+      "createdDateTime": "2024-06-27T17:40:50Z",
+      "locale": "en-US",
+      "displayName": "Simple transcription",
+      "description": "Simple transcription description"
+    },
+    {
+      "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/a2ca324d-d685-477d-9d31-787519aa2acf",
+      "model": {
+        "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/models/base/a1b73ec2-f75b-4b61-90e6-163ebae736a5"
+      },
+      "links": {
+        "files": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/a2ca324d-d685-477d-9d31-787519aa2acf/files"
+      },
+      "properties": {
+        "diarizationEnabled": true,
+        "wordLevelTimestampsEnabled": false,
+        "displayFormWordLevelTimestampsEnabled": false,
+        "channels": [
+          0,
+          1
+        ],
+        "punctuationMode": "DictatedAndAutomatic",
+        "profanityFilterMode": "Masked",
+        "duration": "PT2S",
+        "diarization": {
+          "speakers": {
+            "minCount": 1,
+            "maxCount": 5
+          }
+        }
+      },
+      "lastActionDateTime": "2024-06-27T17:44:03Z",
+      "status": "Succeeded",
+      "createdDateTime": "2024-06-27T17:43:32Z",
+      "locale": "en-US",
+      "displayName": "Simple transcription",
+      "description": "Simple transcription description"
+    },
+    {
+      "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/4319c7a0-f28c-4703-bab3-b8e4607742f9",
+      "model": {
+        "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/models/base/a1b73ec2-f75b-4b61-90e6-163ebae736a5"
+      },
+      "links": {
+        "files": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/4319c7a0-f28c-4703-bab3-b8e4607742f9/files"
+      },
+      "properties": {
+        "diarizationEnabled": true,
+        "wordLevelTimestampsEnabled": false,
+        "displayFormWordLevelTimestampsEnabled": false,
+        "channels": [
+          0,
+          1
+        ],
+        "punctuationMode": "DictatedAndAutomatic",
+        "profanityFilterMode": "Masked",
+        "diarization": {
+          "speakers": {
+            "minCount": 1,
+            "maxCount": 5
+          }
+        }
+      },
+      "lastActionDateTime": "2024-06-27T18:06:05Z",
+      "status": "NotStarted",
+      "createdDateTime": "2024-06-27T18:06:05Z",
+      "locale": "en-US",
+      "displayName": "Simple transcription",
+      "description": "Simple transcription description"
+    }
+  ]
+}

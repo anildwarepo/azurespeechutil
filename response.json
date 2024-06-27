@@ -1,0 +1,12 @@
+{
+  "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.1/transcriptions/a2ca324d-d685-477d-9d31-787519aa2acf/files/9fb9a4dd-067b-4679-b056-abd369a613e7",
+  "name": "contenturl_0.json",
+  "kind": "Transcription",
+  "properties": {
+    "size": 985
+  },
+  "createdDateTime": "2024-06-27T17:43:59Z",
+  "links": {
+    "contentUrl": "https://spsvcprodwus2.blob.core.windows.net/bestor-acc02701-cb45-42dc-9d32-2843911017ca/TranscriptionData/a2ca324d-d685-477d-9d31-787519aa2acf_0_0.json?skoid=fafbfac3-5958-482d-b9b0-50759c329790&sktid=33e01921-4d64-4f8c-a055-5bdaffd5e33d&skt=2024-06-27T17%3A54%3A53Z&ske=2024-07-02T17%3A59%3A53Z&sks=b&skv=2024-05-04&sv=2024-05-04&st=2024-06-27T17%3A54%3A53Z&se=2024-06-28T05%3A59%3A53Z&sr=b&sp=rl&sig=7duWsxk6YCRiriOwLn11rKky%2BLOAx27SprRYKyrpUEA%3D"
+  }
+}
